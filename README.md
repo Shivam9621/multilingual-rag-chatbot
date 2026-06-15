@@ -1,6 +1,6 @@
 ﻿---
 title: Multilingual RAG Chatbot
-emoji: 🪔
+emoji: 🤖
 colorFrom: orange
 colorTo: green
 sdk: docker
@@ -91,4 +91,5 @@ Get a free Groq API key at: https://console.groq.com
 > "Built and deployed a cross-lingual RAG chatbot over Hindi corpora using
 > LaBSE embeddings and Llama-3.1-70B; integrated RAGAS faithfulness
 > evaluation achieving X% grounding score on Hindi QA benchmarks."
+
 
