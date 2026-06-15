@@ -1,26 +1,34 @@
-# Multilingual RAG Chatbot — Hindi + English
+﻿---
+title: Multilingual RAG Chatbot
+emoji: 🪔
+colorFrom: orange
+colorTo: green
+sdk: docker
+pinned: false
+---
+# Multilingual RAG Chatbot â€” Hindi + English
 
 Cross-lingual RAG system that answers questions in Hindi and English,
 retrieving from a shared multilingual corpus using LaBSE embeddings.
 
 ## Architecture
 
-- **Embeddings**: LaBSE (cross-lingual — Hindi and English share the same vector space)
+- **Embeddings**: LaBSE (cross-lingual â€” Hindi and English share the same vector space)
 - **Vector store**: ChromaDB (persisted)
 - **LLM**: Groq Llama-3.1-70B (free tier)
 - **Evaluation**: RAGAS faithfulness + answer relevancy
-- **Stack**: LangChain · FastAPI · Streamlit · Render
+- **Stack**: LangChain Â· FastAPI Â· Streamlit Â· Render
 
 ## Quickstart
 
-### Option A — Google Colab (recommended for Phase 1 & 2)
+### Option A â€” Google Colab (recommended for Phase 1 & 2)
 
 1. Open `notebooks/phase1_2_colab.ipynb` in Colab
 2. Set runtime to **GPU (T4)**
 3. Run all cells top to bottom
 4. ChromaDB saves to your Google Drive
 
-### Option B — Local (VS Code)
+### Option B â€” Local (VS Code)
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/multilingual-rag
@@ -41,23 +49,23 @@ python ingest/02_embed_and_store.py
 
 ```
 multilingual-rag/
-├── ingest/
-│   ├── 01_load_and_chunk.py      # Phase 1
-│   └── 02_embed_and_store.py     # Phase 2
-├── app/
-│   ├── main.py                   # FastAPI routes (Phase 3)
-│   ├── rag_chain.py              # LangChain RAG logic
-│   └── evaluator.py              # RAGAS metrics (Phase 4)
-├── frontend/
-│   └── streamlit_app.py          # UI (Phase 5)
-├── notebooks/
-│   └── phase1_2_colab.ipynb      # Colab notebook (Phase 1+2)
-├── data/
-│   ├── chunks/                   # Saved chunks (JSONL)
-│   └── pdfs/                     # Your custom PDFs go here
-├── chroma_db/                    # Persisted vector store
-├── .env.example
-└── requirements.txt
+â”œâ”€â”€ ingest/
+â”‚   â”œâ”€â”€ 01_load_and_chunk.py      # Phase 1
+â”‚   â””â”€â”€ 02_embed_and_store.py     # Phase 2
+â”œâ”€â”€ app/
+â”‚   â”œâ”€â”€ main.py                   # FastAPI routes (Phase 3)
+â”‚   â”œâ”€â”€ rag_chain.py              # LangChain RAG logic
+â”‚   â””â”€â”€ evaluator.py              # RAGAS metrics (Phase 4)
+â”œâ”€â”€ frontend/
+â”‚   â””â”€â”€ streamlit_app.py          # UI (Phase 5)
+â”œâ”€â”€ notebooks/
+â”‚   â””â”€â”€ phase1_2_colab.ipynb      # Colab notebook (Phase 1+2)
+â”œâ”€â”€ data/
+â”‚   â”œâ”€â”€ chunks/                   # Saved chunks (JSONL)
+â”‚   â””â”€â”€ pdfs/                     # Your custom PDFs go here
+â”œâ”€â”€ chroma_db/                    # Persisted vector store
+â”œâ”€â”€ .env.example
+â””â”€â”€ requirements.txt
 ```
 
 ## Environment variables
@@ -83,3 +91,4 @@ Get a free Groq API key at: https://console.groq.com
 > "Built and deployed a cross-lingual RAG chatbot over Hindi corpora using
 > LaBSE embeddings and Llama-3.1-70B; integrated RAGAS faithfulness
 > evaluation achieving X% grounding score on Hindi QA benchmarks."
+
