@@ -1,0 +1,31 @@
+# Core RAG stack
+langchain==0.2.16
+langchain-community==0.2.16
+langchain-core==0.2.38
+
+# Vector store
+chromadb==0.5.5
+
+# Multilingual embeddings (LaBSE)
+sentence-transformers==3.0.1
+
+# LLM inference (Groq — free, fast)
+groq==0.9.0
+
+# Document loaders
+pypdf==4.3.1
+wikipedia==1.4.0
+datasets==2.21.0
+
+# Evaluation
+ragas==0.1.14
+
+# API + UI (Phase 3+)
+fastapi==0.112.0
+uvicorn==0.30.6
+streamlit==1.37.1
+
+# Utilities
+python-dotenv==1.0.1
+torch>=2.0.0
+numpy>=1.24.0
