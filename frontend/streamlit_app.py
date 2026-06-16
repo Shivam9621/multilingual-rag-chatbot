@@ -217,7 +217,7 @@ with st.sidebar:
 
 def check_backend():
     try:
-        resp = requests.get(f"{API_URL}/health", timeout=3)
+        resp = requests.get(f"{API_URL}/health", timeout=10)
         if resp.status_code == 200:
             return True, resp.json()
         return False, None
