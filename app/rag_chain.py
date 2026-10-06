@@ -23,7 +23,7 @@ load_dotenv()
 EMBEDDING_MODEL = "sentence-transformers/LaBSE"
 CHROMA_DIR = "./chroma_db"
 COLLECTION_NAME = "hindi_rag"
-LLM_MODEL = "llama-3.3-70b-versatile"
+LLM_MODEL = "openai/gpt-oss-20b"
 TOP_K = 3   # number of chunks to retrieve
 
 
