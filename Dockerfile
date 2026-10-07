@@ -1,4 +1,5 @@
-﻿FROM python:3.11-slim
+# Rebuild trigger: 2026-10-07
+FROM python:3.11-slim
 
 WORKDIR /app
 
